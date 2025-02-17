@@ -5,12 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>내 홈페이지</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        h1 { color: blue; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ✅ 메인 배너 스타일 */
+        .main-banner {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .banner-content h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .banner-content p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .banner-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        .banner-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
+
+    <!-- ✅ 메인 배너 추가 -->
+    <div class="main-banner">
+        <div class="banner-content">
+            <h1>환영합니다!</h1>
+            <p>이곳은 나만의 홈페이지입니다.</p>
+            <a href="#more" class="banner-button">더 알아보기</a>
+        </div>
+    </div>
+
     <h1>환영합니다!</h1>
     <p>이건 나만 쓰는 홈페이지야.</p>
+
 </body>
 </html>
+
